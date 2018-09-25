@@ -1,15 +1,15 @@
 
-public class BoundingBox extends Point{
+public class BoundingBox{
 
 	Point leftCorner;
 	final private double width;
 	final private double height;
 	
-	BoundingBox(double x, double y, double width, double height) {
-		super(x, y);
+	BoundingBox(Point x, double width, double height) {
+		this.leftCorner = x;
 		this.width = width;
 		this.height = height;
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public double getvalueWidth() {
@@ -23,11 +23,11 @@ public class BoundingBox extends Point{
 	@Override
 	public int hashCode() {
 		int hash = 1;
-		long widthLong = Double.doubleToLongBits(width);
-		long heightLong = Double.doubleToLongBits(height);
+		int widthLong = Double.hashCode(width);
+		int heightLong = Double.hashCode(height);
 		hash = 31 * super.hashCode();
-		hash = 31 * width.hashCode();
-		hash = 31 * height.hashCode();
+		hash = 31 * widthLong;
+		hash = 31 * heightLong;
 		return hash;
 	}
 	

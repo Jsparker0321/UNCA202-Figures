@@ -13,25 +13,20 @@ public class Point {
 		return x;
 	}
 	
-	public void setvalueX(double x) {
-		this.x = x;
-	}
 	
 	public double getvalueY() {
 		return y;
 	}
 	
-	public void setvalueY(double y) {
-		this.y = y;
-	}
+	
 	
 	@Override
 	public int hashCode() {
 		int hash = 3;
-		long xLong = Double.doubleToLongBits(x);
-		long yLong = Double.doubleToLongBits(y);
-		hash = 31 * hash + x;
-		hash = 31 * hash + y.hashCode();
+		int xLong = Double.hashCode(x);
+		int yLong = Double.hashCode(y);
+		hash = 31 * hash + xLong;
+		hash = 31 * hash + yLong;
 		return hash;
 	}
 	
