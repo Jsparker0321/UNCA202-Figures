@@ -33,6 +33,9 @@ public abstract class Figure {
 	
 	public void translate(double horizontalMove, double verticalMove) {
 		
+		horizontalMove = horizontalMove + 5;
+		
+		verticalMove = verticalMove + 5;
 	}
 	
 	public static boolean larger(Figure one, Figure two) {

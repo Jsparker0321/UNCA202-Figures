@@ -1,15 +1,19 @@
 
 public class BoundingBox{
 
-	Point leftCorner;
+	final private Point leftCorner;
 	final private double width;
 	final private double height;
 	
-	BoundingBox(Point x, double width, double height) {
-		this.leftCorner = x;
+	BoundingBox(Point leftCorner, double width, double height) {
+		this.leftCorner = leftCorner;
 		this.width = width;
 		this.height = height;
 		
+	}
+	
+	public Point getvalueleftCorner() {
+		return leftCorner;
 	}
 	
 	public double getvalueWidth() {

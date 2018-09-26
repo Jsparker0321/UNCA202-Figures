@@ -2,8 +2,8 @@ import java.awt.Color;
 
 public class Ellipse extends Figure {
 
-	static Point one;
-	static BoundingBox two;
+	Point one;
+	BoundingBox two;
 	private double x;
 	private double y;
 	private double horizontalAxis;
@@ -11,7 +11,7 @@ public class Ellipse extends Figure {
 
 	
 	public Ellipse(double x, double y, double horizontalAxis, double verticalAxis, Color color) {
-		super(two, color, true);
+		super(new BoundingBox(new Point(x,y), horizontalAxis, verticalAxis), color, true);
  
 		
 		this.one = new Point(x,y);
@@ -22,8 +22,7 @@ public class Ellipse extends Figure {
 	public double getvalueX() {
 		return x;
 	}
-	
-	
+
 	public double getvalueY() {
 		return y;
 	}

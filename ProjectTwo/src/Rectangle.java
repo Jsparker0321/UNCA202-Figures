@@ -2,8 +2,8 @@ import java.awt.Color;
 
 public class Rectangle extends Figure {
 	
-	static Point one;
-	static BoundingBox two;
+	Point one;
+	BoundingBox two;
 	private double x;
 	private double y;
 	private double width;
@@ -11,23 +11,20 @@ public class Rectangle extends Figure {
 
 	
 	public Rectangle(double x, double y, double width, double height, Color color) {
-		super(two, color, true);
+		super(new BoundingBox(new Point(x,y), width, height), color, true);
  
 		this.one = new Point(x,y);
 		this.two = new BoundingBox(one, width, height);
 		
 	}
 
-
 	public double getvalueX() {
 		return x;
 	}
 	
-	
 	public double getvalueY() {
 		return y;
 	}
-	
 	
 	public double getvalueWidth() {
 		return width;
@@ -41,5 +38,7 @@ public class Rectangle extends Figure {
 		
 		return (width * height);
 	}
+	
+	
 
 }
