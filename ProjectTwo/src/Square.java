@@ -16,6 +16,10 @@ public class Square extends Rectangle {
 		return side;
 	}
 
+	public double area() {
+		
+		return (side * side);
+	}
 	
 	
 	
