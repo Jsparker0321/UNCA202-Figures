@@ -1,3 +1,10 @@
+/**
+ * @author Jessica Parker 
+ * @version October 1st, 2018
+ *			Abstract Classes and Inheritance
+ *			CSCI 201
+ */
+
 import java.awt.Color;
 
 public abstract class Figure {
@@ -6,6 +13,13 @@ public abstract class Figure {
 	private Color color;
 	private boolean visible;
 
+
+	/**
+	 * Method takes in three parameters to define a Figure
+	 * @param box creates a bounding box
+	 * @param color initializes color
+	 * @param visible initializes visibility
+	 */
 	public Figure(BoundingBox box, Color color, boolean visible) {
 		this.box = box;
 		this.color = color;
@@ -24,6 +38,10 @@ public abstract class Figure {
 		this.color = color;
 	}
 
+	/**
+	 * Abstract method to be implemented in other classes
+	 * @return double representing area of a figure
+	 */
 	public abstract double area();
 
 	public void dilate(double factor) {
@@ -41,6 +59,13 @@ public abstract class Figure {
 		this.box = new BoundingBox(pointTwo, this.box.getvalueHeight(), this.box.getvalueWidth());
 	}
 
+
+	/**
+	 * Method takes in two parameters to evaluate if one is bigger than the other
+	 * @param one
+	 * @param two
+	 * @return true or false if the area of figure one is greater than the are of Figure two 
+	 */
 	public static boolean larger(Figure one, Figure two) {
 		if (one.area() > two.area()) {
 			return true;
@@ -48,6 +73,10 @@ public abstract class Figure {
 		return false;
 	}
 
+	/**
+	 * Used to make equal comparison between two objects
+	 * @return hash returns distinct integers for distinct objects
+	 */
 	@Override
 	public int hashCode() {
 		int hash = 1;
@@ -57,6 +86,11 @@ public abstract class Figure {
 		return hash;
 	}
 
+	/**
+	 * Used to determine equivalence between object instances
+	 * @param obj used to compare objects of Figure class
+	 * @return if the objects are equal 
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -69,6 +103,9 @@ public abstract class Figure {
 		return color.equals(f.color) && visible == f.visible && box.equals(f.box);
 	}
 
+	/**
+	 * @return color, visibility, and bounding box in a string format 
+	 */
 	@Override
 	public String toString() {
 		return "Figure: " + "Color is: " + color + "Visibility: " + visible + "Box: " + box;
