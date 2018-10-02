@@ -10,11 +10,11 @@ public class Ellipse extends Figure {
 
 
 	/**
-	 * Method takes in five parameters to define an Ellipse
+	 * Method takes in five parameters to define an Ellipse an initialize variables
 	 * @param x  center coordinate of Ellipse
-	 * @param y	 center coordiante of Ellipse
+	 * @param y	 center coordinate of Ellipse
 	 * @param horizontalAxis lengths 
-	 * @param verticalAxis lenghts
+	 * @param verticalAxis lengths
 	 * @param color defines a color
 	 */
 	public Ellipse(double x, double y, double horizontalAxis, double verticalAxis, Color color) {

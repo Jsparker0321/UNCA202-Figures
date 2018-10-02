@@ -9,7 +9,7 @@ import java.awt.Color;
 public class Rectangle extends Figure {
 
 	/**
-	 * Takes in five parameters that define a Rectangle
+	 * Takes in five parameters that define a Rectangle and initializes variables 
 	 * @param x coordinate of upper left corner
 	 * @param y coordinate of upper left corner
 	 * @param width initialize width of rectangle

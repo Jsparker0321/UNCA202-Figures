@@ -10,7 +10,7 @@ import java.lang.Math;
 public class Circle extends Ellipse {
 	
 	/**
-	 * Method takes in four parameters to define a Circle
+	 * Method takes in four parameters to define a Circle and initializes variables
 	 * @param x coordinate of Circle
 	 * @param y coordinate of Circle
 	 * @param circleRadius radius of circle

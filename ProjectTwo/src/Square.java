@@ -9,7 +9,7 @@ import java.awt.Color;
 public class Square extends Rectangle {
 
 	/**
-	 * Takes in four parameters that define a Square
+	 * Takes in four parameters that define a Square and initialize variables
 	 * @param x coordinate of upper left corner
 	 * @param y coordinate of upper left corner
 	 * @param side initialize length of side

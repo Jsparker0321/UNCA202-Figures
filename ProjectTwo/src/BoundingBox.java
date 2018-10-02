@@ -11,7 +11,7 @@ public class BoundingBox {
 	private final double height;
 
 	/**
-	 * Takes in three parameters and defines what a bounding box is
+	 * Takes in three parameters and defines what a bounding box is and initializes variables
 	 * @param leftCorner the x and y coordinates of the upper leftCorner (type is a Point)
 	 * @param width initializes width of bounding box
 	 * @param height initializes height of bounding box

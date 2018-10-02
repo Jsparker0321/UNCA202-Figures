@@ -15,7 +15,7 @@ public abstract class Figure {
 
 
 	/**
-	 * Method takes in three parameters to define a Figure
+	 * Method takes in three parameters to define a Figure and initialize variables
 	 * @param box creates a bounding box
 	 * @param color initializes color
 	 * @param visible initializes visibility

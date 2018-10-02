@@ -10,7 +10,7 @@ public class Point {
 	final double y;
 
 	/**
-	 * Takes in two parameters and initialize variables 
+	 * Takes in two parameters and initializes variables 
 	 * @param x initializes x value
 	 * @param y initializes y value
 	 */
